@@ -1,0 +1,36 @@
+customButton {
+  padding: 5px 5px;
+  margin-left: 500px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20%;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.active {
+  background-color: green;
+}
+
+.inactive {
+  background-color: red;
+}
+
+/* .fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
+.wrap {
+  max-width: 200px;
+  margin: auto;
+} */
