@@ -1,4 +1,6 @@
-import CustomButton from "../CustomButton/CustomButton";
+// import CustomButton from "../CustomButton/CustomButton";
+import LikeButton from "../CustomButton/LikeButton";
+import DislikeButton from "../CustomButton/DislikeButton";
 
 const DisplayPosts = (props) => {
   return (
@@ -8,7 +10,10 @@ const DisplayPosts = (props) => {
           <div key={index}>
             <h4>{post.name}</h4>
             <p>{post.post}</p>
-            <CustomButton message="Like" />
+            <div className="btn-btn-secondary" style={{ textAlign: "right" }}>
+              {/* <CustomButton /> */}
+              <LikeButton /> <DislikeButton />
+            </div>
           </div>
         );
       })}

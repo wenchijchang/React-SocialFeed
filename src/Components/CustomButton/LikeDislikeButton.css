@@ -1,0 +1,21 @@
+LikeDislikeButton {
+  color: black;
+  padding: 4px 7px;
+  border: 1px;
+}
+
+.like {
+  background-color: darkcyan;
+  box-shadow: 2px 2px inset;
+  border-radius: 5px;
+}
+
+.dislike {
+  background-color: hotpink;
+  border-radius: 5px;
+}
+
+.inactive {
+  background-color: #0777b352;
+  border-radius: 5px;
+}

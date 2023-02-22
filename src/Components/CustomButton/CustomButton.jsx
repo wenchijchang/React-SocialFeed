@@ -2,40 +2,26 @@ import { useState } from "react";
 import "./CustomButton.css";
 
 const CustomButton = (props) => {
-  const [buttonClass, setButtonClass] = useState("active");
+  const [buttonClass, setButtonClass] = useState("class");
+  const [message, setMessage] = useState(true);
 
   function handleClick() {
     if (buttonClass === "active") {
       setButtonClass("inactive");
-      props.message = "Dislike";
+      setMessage(false);
     } else {
       setButtonClass("active");
-      props.message = "Like";
+      setMessage(true);
+      // props.message = "Like";
     }
   }
   return (
     <div>
       <button className={buttonClass} onClick={handleClick}>
-        {props.message}
+        {message ? "Like" : "Disliked"}
       </button>
     </div>
   );
 };
 
 export default CustomButton;
-
-{
-  /* <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> */
-}
-
-// function myFunction(x) {
-//   x.classList.toggle("fa-thumbs-down");
-// }
-
-// return (
-//   <div className="wrap">
-//     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-//   </div>
-// );
