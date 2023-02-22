@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./CustomButton.css";
 
 const CustomButton = (props) => {
-  const [buttonClass, setButtonClass] = useState("class");
+  const [buttonClass, setButtonClass] = useState("active");
   const [message, setMessage] = useState(true);
 
   function handleClick() {

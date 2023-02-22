@@ -19,18 +19,3 @@ button:hover {
 .inactive {
   background-color: red;
 }
-
-/* .fa {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.fa:hover {
-  color: darkblue;
-}
-
-.wrap {
-  max-width: 200px;
-  margin: auto;
-} */
